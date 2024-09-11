@@ -1,5 +1,5 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Link, Redirect } from "expo-router";
+import { View } from "react-native";
 
 export default function Index() {
   return (
@@ -10,17 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link
-        style={{
-          flex: 5,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        href={"/about"}
-      >
-        {" "}
-        About
-      </Link>
+      <Link href={"/about"}> ----------------Take me to About Stack</Link>
     </View>
   );
 }
