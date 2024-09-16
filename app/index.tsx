@@ -11,6 +11,7 @@ export default function Index() {
       }}
     >
       <Link href={"/about"}> ----------------Take me to About Stack</Link>
+      <Redirect href={"/explore"} />
     </View>
   );
 }
